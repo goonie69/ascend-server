@@ -12,7 +12,6 @@ import ethos.model.content.godwars.Godwars;
 import ethos.model.items.GameItem;
 import ethos.model.items.Item;
 import ethos.model.items.ItemAssistant;
-import ethos.model.items.ItemDefinition;
 import ethos.model.npcs.NPC;
 import ethos.model.npcs.NPCDefinitions;
 import ethos.model.npcs.NPCHandler;
@@ -175,13 +174,7 @@ public class DropManager {
 							p.sendMessage("@red@" + Misc.formatPlayerName(player.playerName) + " received a drop: " + Item.getItemName(item.getId()) + ".");
 					});
 				}
-				//Demonic Knights
-					if(player.currentClan == 2 && ItemDefinition.forId(item.getId()).isNoteable()) { //Demonic Knights
-						if(Misc.random(100) >= 100 - player.getPA().percentChanceForClanLevel(player.playerLevel[22])) {
-						Server.itemHandler.createGroundItem(player, item.getId()+1, location.getX(), location.getY(),
-								location.getZ(), item.getAmount(), player.getIndex());
-						}
-					}
+
 				Server.itemHandler.createGroundItem(player, item.getId(), location.getX(), location.getY(),
 						location.getZ(), item.getAmount(), player.getIndex());
 			}

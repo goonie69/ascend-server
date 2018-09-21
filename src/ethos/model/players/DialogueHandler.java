@@ -923,7 +923,7 @@ public class DialogueHandler {
 
 		case 5998:
 			sendNpcChat3("Only <img=4>@red@Donators @bla@can access the Donator Zone.",
-					"Interested in becoming an Danafor <img=4>@red@Donator@bla@?",
+					"Interested in becoming an Ascend <img=4>@red@Donator@bla@?",
 					"Go to the bottom of your quest tab and click the <img=19>@yel@Store.", c.talkingNpc,
 					"<img=4>Donation Informative<img=4>");
 			c.nextChat = 0;
@@ -967,7 +967,7 @@ public class DialogueHandler {
 			c.nextChat = 0;
 			break;
 		case 55873:
-			sendNpcChat2("Hello, my name is Banky.", "I was hired by Danafor to be a travelling banker!", c.talkingNpc,
+			sendNpcChat2("Hello, my name is Banky.", "I was hired by Ascend to be a travelling banker!", c.talkingNpc,
 					"Banky The Banker");
 			c.nextChat = 0;
 			break;
@@ -1137,7 +1137,7 @@ public class DialogueHandler {
 			break;
 		case 14012:
 			sendPlayerChat3("Yeah! I've never seen one before.", "I guess it's one small step for NPC's,",
-					"one giant leap for Danafor!");
+					"one giant leap for Ascend!");
 			c.nextChat = 14013;
 			break;
 		case 14013:
@@ -2987,7 +2987,7 @@ public class DialogueHandler {
 			break;
 
 		case 673:
-			sendNpcChat("Glad to see you have joined Danafor!", "To start, this is our lovely home area.",
+			sendNpcChat("Glad to see you have joined Ascend!", "To start, this is our lovely home area.",
 					"Let me show you around!");
 			c.nextChat = 674;
 			break;

@@ -115,13 +115,6 @@ public class ClickObject implements PacketType {
 			case 25029:
 				PuroPuro.magicalWheat(c);
 				break;
-			case 3254:
-				if (c.absY == 3224 && (c.absX == 2067)) {
-				AgilityHandler.delayEmote(c, "JUMP", 2067, 3220, 0, 2);
-				} else if (c.absY == 3220 && (c.absX == 2067)) {
-				AgilityHandler.delayEmote(c, "JUMP", 2067, 3224, 0, 2);
-				}
-				break;
 			case 21728:
 				if (c.playerLevel[16] < 34) {
 					c.sendMessage("You need an Agility level of 34 to pass this.");
@@ -155,8 +148,7 @@ public class ClickObject implements PacketType {
 				c.getPA().movePlayer(1644, 3673, 0);
 				break;
 			case 27785:
-				c.getPA().showInterface(51000);
-				//c.getTeleport().selection(player, 0);
+				c.getDH().sendDialogues(70300, -1);
 				break;
 			case 26709:// strongholdslayer cave
 				c.getPA().movePlayer(2429, 9825, 0);

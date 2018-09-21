@@ -204,6 +204,35 @@ public class GlobalObjects {
 			}
 
 		}
+		//Edgeville Object Removal
+		player.getPA().checkObjectSpawn(-1, 3081, 3510, 0, 10); //Table
+		player.getPA().checkObjectSpawn(-1, 3078, 3510, 0, 10); //Table
+		player.getPA().checkObjectSpawn(-1, 3080, 3510, 0, 10); //Crate
+		player.getPA().checkObjectSpawn(-1, 3077, 3512, 0, 10); //Stepladder
+		//player.getPA().checkObjectSpawn(-1, 3083, 3513, 0, 10); //Ladder
+		player.getPA().checkObjectSpawn(-1, 3077, 3513, 0, 10); //Shelves
+		player.getPA().checkObjectSpawn(-1, 3078, 3513, 0, 10); //Shelves
+		player.getPA().checkObjectSpawn(-1, 3079, 3513, 0, 10); //Shelves
+		player.getPA().checkObjectSpawn(-1, 3080, 3513, 0, 10); //Shelves
+		
+		//Shilo Object Removal
+		player.getPA().checkObjectSpawn(-1, 2835, 2988, 0, 10); //Ladder
+		player.getPA().checkObjectSpawn(-1, 2834, 2980, 0, 10); //Bookshelf
+		player.getPA().checkObjectSpawn(-1, 2832, 2982, 0, 10); //Bed
+		player.getPA().checkObjectSpawn(-1, 2837, 2982, 0, 10); //Bed
+		player.getPA().checkObjectSpawn(-1, 2837, 2987, 0, 10); //Bookshelf
+		player.getPA().checkObjectSpawn(-1, 2836, 2990, 0, 10); //Stool
+		player.getPA().checkObjectSpawn(-1, 2836, 2991, 0, 10); //Table
+		player.getPA().checkObjectSpawn(-1, 2836, 2992, 0, 10); //Stool
+		player.getPA().checkObjectSpawn(-1, 2835, 2991, 0, 10); //Stool
+		player.getPA().checkObjectSpawn(-1, 2837, 2991, 0, 10); //Stool
+		player.getPA().checkObjectSpawn(-1, 2833, 2991, 0, 10); //Bookshelf
+		
+		
+	    //New Shilo Objects
+		player.getPA().checkObjectSpawn(13641, 2837, 2987, 0, 10); //TPDevice
+		player.getPA().checkObjectSpawn(13641, 2837, 2988, 0, 10); //TPDevice
+		player.getPA().checkObjectSpawn(11803, 2833, 2990, 0, 10); //DonatorSlayerDungeon
 //		if (HolidayController.CHRISTMAS.isActive()) {
 //			player.getPA().checkObjectSpawn(0, 3083, 3500, 0, 10);
 //			player.getPA().checkObjectSpawn(1516, 2950, 3824, 0, 10); //Benches

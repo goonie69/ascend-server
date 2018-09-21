@@ -79,12 +79,7 @@ public class WoodcuttingEvent extends Event<Player> {
 					stumpId = 29671;
 			}
 			Server.getGlobalObjects().add(new GlobalObject(tree.equals(Tree.REDWOOD) ? stumpId : tree.getStumpId(), x, y, attachment.heightLevel, face, 10, tree.getRespawnTime(), objectId));
-			if(attachment.currentClan == 1) { //Holy Knights
-				if(Misc.random(100) >= 100 - attachment.getPA().percentChanceForClanLevel(attachment.playerLevel[22])) {
-					attachment.getItems().addItem(tree.getWood()+1, 1);
-					return;
-				}
-			}
+			
 			attachment.getItems().addItem(tree.getWood(), 1);
 			attachment.getPA().addSkillXP((int) (attachment.getRights().isOrInherits(Right.OSRS) ? osrsExperience : experience) , Skill.WOODCUTTING.getId(), true);
 			Achievements.increase(attachment, AchievementType.WOODCUT, 1);

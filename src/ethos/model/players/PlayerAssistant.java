@@ -3481,40 +3481,16 @@ public class PlayerAssistant {
 			break;
 
 		case 20:
+			case 21:
+			case 22:
 			sendFrame126("" + c.playerLevel[20] + "", 4152);
 			sendFrame126("" + getLevelForXP(c.playerXP[20]) + "", 4153);
 			sendFrame126("" + c.playerXP[20] + "", 4157);
 			sendFrame126("" + getXPForLevel(getLevelForXP(c.playerXP[20]) + 1) + "", 4159);
 			break;
-		case 21:
-			sendFrame126("" + c.playerLevel[21] + "", 18799);
-			sendFrame126("" + getLevelForXP(c.playerXP[21]) + "", 18800);
-			break;
-		case 22:
-			sendFrame126("" + c.playerLevel[22] + "", 18797);
-			sendFrame126("" + getLevelForXP(c.playerXP[22]) + "", 18798);
-			break;
 		}
 	}
-	public int percentChanceForClanLevel(int level) {
-		
-		if(level > 90) {
-			return 25;
-		}
-		if(level > 70) {
-			return 20;
-		}
-		if(level > 50) {
-			return 15;
-		}
-		if(level > 30) {
-			return 10;
-		}
-		if(level > 10) {
-			return 5;
-		}
-		return 0;
-	}
+
 	public int getXPForLevel(int level) {
 		int points = 0;
 		int output = 0;

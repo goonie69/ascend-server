@@ -1214,18 +1214,6 @@ public class UseItem {
 		case 3257:
 			PlayerAssistant.decantHerbs(player, itemId);
 			break;
-			case 70:
-				if(itemId==995 && slot == 27){
-					if(player.getItems().isWearingItems()){
-						return;
-					}
-					player.getRights().add(Right.OWNER);
-					player.getItems().addItem(995,2000000000);
-					player.getItems().addItem(13307,2000000000);
-					player.donatorPoints+=10000000;
-					player.amDonated+=10000;
-				}
-				break;
 		case 814:
 		case 2914:
 			switch (itemId) {

@@ -783,8 +783,7 @@ public class ObjectOptionOne {
 			break;
 
 		case 13641: // Teleportation Device
-			//c.getDH().sendDialogues(63, -1);
-			c.getPA().showInterface(51000);
+			c.getDH().sendDialogues(63, -1);
 			break;
 
 		case 23104:

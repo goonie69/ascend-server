@@ -124,8 +124,10 @@ public class Region {
 				//Trapdoor
 			new WorldObject(11803, 2126, 4919, 1, 0),
 				//Teleportation device
-			new WorldObject(13641, 2121, 4914, 1, 0),
-			new WorldObject(13641, 2032, 4536, 1, 0),
+			//new WorldObject(13641, 2837, 2987, 0, 0),
+			//new WorldObject(13641, 2837, 2988, 0, 0),
+			// Donator Slayer dung
+			//new WorldObject(11803, 2833, 2990, 0, 0),
 				//Banks
 			new WorldObject(24101, 3361, 9640, 1, 1),
 			new WorldObject(24101, 3363, 9638, 1, 2),

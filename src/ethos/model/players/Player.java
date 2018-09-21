@@ -44,6 +44,7 @@ import ethos.model.content.godwars.Godwars;
 import ethos.model.content.godwars.GodwarsEquipment;
 import ethos.model.content.instances.InstancedAreaManager;
 import ethos.model.content.kill_streaks.Killstreak;
+import ethos.model.content.penancequeen.PenanceQueen;
 import ethos.model.content.presets.Presets;
 import ethos.model.content.prestige.PrestigeSkills;
 import ethos.model.content.safebox.SafeBox;
@@ -157,8 +158,6 @@ public class Player extends Entity {
 	}
 	public int[][] raidReward ={{0,0}};
 	public int raidCount;
-	//1=holy 2=demonic
-	public int currentClan;
 
 
 	/**
@@ -208,6 +207,7 @@ public class Player extends Entity {
 	 */
 	private ExpLock explock = new ExpLock(this);
 	private PrestigeSkills prestigeskills = new PrestigeSkills(this);
+	private PenanceQueen penanceQueen = new PenanceQueen(this);
 	private LootingBag lootingBag = new LootingBag(this);
 	private SafeBox safeBox = new SafeBox(this);
 
@@ -219,6 +219,9 @@ public class Player extends Entity {
 
 	public UltraMysteryBox getUltraMysteryBox() {
 		return ultraMysteryBox;
+	}
+	public PenanceQueen getPenanceQueen() {
+		return penanceQueen;
 	}
 
 	public TeleportType teleportType;
@@ -767,15 +770,7 @@ public class Player extends Entity {
 		outStream.writeWord(rights);
 		outStream.endFrameVarSize();
 	}
-	public void sendConfig(int x, int y, int z, int i) {
-		getOutStream().createFrameVarSize(166);
-		getOutStream().writeByte(x);// readUnsignedByte
-		getOutStream().writeByte(y);// readUnsignedByte
-		getOutStream().writeByte(-1);// readUnsignedByte
-		getOutStream().writeByte(z);// readUnsignedByte
-		getOutStream().writeByte(i);// readUnsignedByte
-		getOutStream().endFrameVarSize();
-	}
+
 	public static final int PACKET_SIZES[] = { 0, 0, 0, 1, -1, 0, 0, 0, 4, 0, // 0
 			0, 0, 0, 0, 8, 0, 6, 2, 2, 0, // 10
 			0, 2, 0, 6, 0, 12, 0, 0, 0, 0, // 20
@@ -814,7 +809,7 @@ public class Player extends Entity {
 	}
 
 	public void highscores() {
-		getPA().sendFrame126("Danafor - Top PKers Online", 6399); // Title
+		getPA().sendFrame126("Ascend - Top PKers Online", 6399); // Title
 		for (int i = 0; i < 10; i++) {
 			if (ranks[i] > 0) {
 				getPA().sendFrame126("Rank " + (i + 1) + ": " + rankPpl[i] + " - Kills: " + ranks[i] + "", 6402 + i);

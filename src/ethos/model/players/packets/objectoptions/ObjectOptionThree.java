@@ -27,12 +27,12 @@ public class ObjectOptionThree {
 		
 		switch (objectType) {
 		case 24101:
-			if (c.debugMessage) {
-				Listing.openPost(c, false, true);
-			} else {
-				c.sendMessage("Trading post is currently disabled until further notice.");
-			}
-			//Listing.openPost(c, false, true);
+			//if (c.debugMessage) {
+			//	Listing.openPost(c, false, true);
+			//} else {
+			//	c.sendMessage("Trading post is currently disabled until further notice.");
+			//}
+			Listing.openPost(c, false, true);
 			break;
 		case 8356://streexerics
 			c.getPA().movePlayer(1311, 3614, 0);

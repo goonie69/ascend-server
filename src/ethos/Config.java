@@ -1,12 +1,10 @@
 package ethos;
 
-import ethos.util.Misc;
-
 public class Config {
 
 	public static boolean local = false;
 
-	public static String SERVER_NAME = "Danafor";
+	public static String SERVER_NAME = "Ascend";
 
 	public static int PLAYERMODIFIER = 0;
 
@@ -316,9 +314,9 @@ public class Config {
 	/**
 	 * Combat experience rates.
 	 */
-	public static final int MELEE_EXP_RATE = 15;
-	public static final int RANGE_EXP_RATE = 15;
-	public static final int MAGIC_EXP_RATE = 15;
+	public static final int MELEE_EXP_RATE = 250;
+	public static final int RANGE_EXP_RATE = 250;
+	public static final int MAGIC_EXP_RATE = 250;
 	/**
 	 * Special server experience bonus rates. (Double experience weekend etc)
 	 */
@@ -423,14 +421,14 @@ public class Config {
 	/**
 	 * The starting location of your server.
 	 */
-	public static final int START_LOCATION_X = 2079;
-	public static final int START_LOCATION_Y = 3231;
+	public static final int START_LOCATION_X = 3087;
+	public static final int START_LOCATION_Y = 3503;
 
 	/**
 	 * The re-spawn point of when someone dies.
 	 */
-	public static final int RESPAWN_X = 2079;
-	public static final int RESPAWN_Y = 3231;
+	public static final int RESPAWN_X = 3087;
+	public static final int RESPAWN_Y = 3503;
 
 	/**
 	 * The re-spawn point of when a duel ends.
@@ -442,7 +440,7 @@ public class Config {
 	 * Glory locations.
 	 */
 	public static final int EDGEVILLE_X = 3087;
-	public static final int EDGEVILLE_Y = 3493;
+	public static final int EDGEVILLE_Y = 3503;
 
 	public static final int AL_KHARID_X = 3293;
 	public static final int AL_KHARID_Y = 3176;

@@ -71,9 +71,8 @@ case 4625:
 				break;
 
 		case 5314:
-			player.getDH().sendDialogues(63, -1);
-		//	player.getPA().showInterface(51000);
-			//player.getTeleport().selection(player, 0);
+			player.getPA().showInterface(51000);
+			player.getTeleport().selection(player, 0);
 			// player.getTeleport().loadMonsterTab();
 			break;
 
